@@ -2,5 +2,9 @@
   {
     "outputFile": "Signup/css/main-style.css",
     "inputFile": "Signup/css/main-style.scss"
+  },
+  {
+    "outputFile": "Signup/css/login.css",
+    "inputFile": "Signup/css/login.scss"
   }
 ]

@@ -1,0 +1,119 @@
+﻿@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm" {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+div {
+    &.dest-main-content {
+        .dest-signup-form {
+            div {
+                &:nth-child(2) {
+                    .tab-content {
+                        div {
+                            margin: 20px 0px;
+
+                            &:nth-child(1) {
+                                form {
+                                    fieldset {
+                                        .control-group {
+                                            margin: 5px 0px;
+
+                                            .controls {
+                                                margin: 5px 0px;
+
+                                                input {
+                                                    width: 25%;
+                                                    border-radius: 3px;
+                                                }
+
+                                                button {
+                                                    background: #1575c1;
+                                                    color: #fff;
+                                                    font-weight: bold;
+                                                    height: 100%;
+                                                    width: 15%;
+
+                                                    &:hover {
+                                                        background: #555;
+                                                    }
+                                                }
+                                            }
+
+                                            &:nth-child(3) {
+                                                .controls {
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                form {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    input {
+                                        width: 25%;
+                                        border-radius: 3px;
+                                    }
+
+                                    div {
+                                        button {
+                                            background: #1575c1;
+                                            color: #fff;
+                                            font-weight: bold;
+                                            height: 100%;
+                                            width: 15%;
+
+                                            &:hover {
+                                                background: #555;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
