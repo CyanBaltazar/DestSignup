@@ -61,6 +61,26 @@ nav {
                 &:nth-child(2) {
                     ul {
                         li {
+                            // Sign up now
+                            &:nth-child(5) {
+                                a {
+                                    height: 30px;
+                                    background: #555;
+                                    color: #fff;
+                                    display: flex;
+                                    margin-top: 10px;
+                                    align-items: center;
+                                    border-radius: 5px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+
+                                    &:hover {
+                                        background: #fff;
+                                        color: #1575c1;
+                                    }
+                                }
+                            }
+
                             a {
                                 color: #fff;
                             }
@@ -127,12 +147,13 @@ header {
                     }
 
                     button {
-                        background: #fff;
-                        color: #1575c1;
+                        background: #1575c1;
+                        color: #fff;
                         font-weight: bold;
+                        font-size: 18px;
 
                         &:hover {
-                            background: #1575c1;
+                            background: #555;
                             color: #fff;
                         }
                     }

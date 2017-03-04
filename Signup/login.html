@@ -6,7 +6,6 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/main-style.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
@@ -49,6 +48,9 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#create">Sign up now</a>
                     </li>
                 </ul>
             </div>
@@ -118,18 +120,16 @@
                     <div class="tab-pane active in active" id="login">
                         <form class="form-horizontal">
                             <fieldset>
-                                <legend>Login</legend>
                                 <div class="control-group">
-                                    <label class="control-label" for="username">Username</label>
                                     <div class="controls">
-                                        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                                        <input type="text" id="username" name="username" placeholder="Username" class="input-xlarge" autofocus>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label" for="password">Password</label>
                                     <div class="controls">
-                                        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                                        <input type="password" id="password" name="password" placeholder="Password" class="input-xlarge">
                                     </div>
+                                    <span>Forgot password? <a href="forgot-password.html#resetPassword">Click here to reset it.</a> </span>
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
@@ -141,14 +141,11 @@
                     </div>
                     <div class="tab-pane fade" id="create">
                         <form id="tab">
-                            <label>Username</label>
-                            <input type="text" value="" class="input-xlarge">
-                            <label>First Name</label>
-                            <input type="text" value="" class="input-xlarge">
-                            <label>Last Name</label>
-                            <input type="text" value="" class="input-xlarge">
-                            <label>Email</label>
-                            <input type="text" value="" class="input-xlarge">                            
+                            <input type="text" placeholder="Username" value="" class="input-xlarge" autofocus>
+                            <input type="password" placeholder="Password" value="" class="input-xlarge">
+                            <input type="text" placeholder="First Name" value="" class="input-xlarge">
+                            <input type="text" placeholder="Last Name" class="input-xlarge">
+                            <input type="text" placeholder="Email" value="" class="input-xlarge">
                             <div>
                                 <button class="btn btn-primary">Create Account</button>
                             </div>
@@ -170,8 +167,6 @@
                 </div>
             </div>
         </div>
-
-
         <hr>
         <!-- Footer -->
         <footer>
@@ -183,44 +178,16 @@
         </footer>
     </div>
     <!-- /.container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-
     <!-- Script to Activate the Carousel -->
     <script>
         $('.carousel').carousel({
             interval: 4000 //changes the speed
         })
     </script>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {

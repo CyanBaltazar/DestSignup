@@ -7,6 +7,19 @@
   align-items: center; }
   nav.navbar div div.navbar-header .navbar-brand {
     color: #fff; }
+  nav.navbar div div:nth-child(2) ul li:nth-child(5) a {
+    height: 30px;
+    background: #555;
+    color: #fff;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px; }
+    nav.navbar div div:nth-child(2) ul li:nth-child(5) a:hover {
+      background: #fff;
+      color: #1575c1; }
   nav.navbar div div:nth-child(2) ul li a {
     color: #fff; }
 
@@ -43,11 +56,12 @@ header {
     header div.carousel-inner .item .carousel-caption p {
       font-size: 16px; }
     header div.carousel-inner .item .carousel-caption button {
-      background: #fff;
-      color: #1575c1;
-      font-weight: bold; }
+      background: #1575c1;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px; }
       header div.carousel-inner .item .carousel-caption button:hover {
-        background: #1575c1;
+        background: #555;
         color: #fff; }
   header a.carousel-control span {
     display: flex;
